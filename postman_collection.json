@@ -1,0 +1,28 @@
+{
+  "info": {
+    "name": "Express Products API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all products",
+      "request": {
+        "method": "GET",
+        "url": "http://localhost:8080/products"
+      }
+    },
+    {
+      "name": "Add a product",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Mouse\",\n  \"price\": 49.99\n}",
+          "options": { "raw": { "language": "json" } }
+        },
+        "url": "http://localhost:8080/products"
+      }
+    }
+  ]
+}
